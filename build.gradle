@@ -1,7 +1,10 @@
 buildscript {
     ext.kotlin_version = '1.2.51'
     repositories {
-        mavenCentral()
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        jcenter()
         maven { url("https://plugins.gradle.org/m2/") }
     }
     dependencies {
@@ -17,6 +20,8 @@ compileKotlin2Js {
 
 repositories {
     mavenLocal()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
     jcenter()
 }
 
