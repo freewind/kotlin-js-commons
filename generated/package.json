@@ -1,0 +1,22 @@
+{
+  "name": "kotlin-js-commons",
+  "version": "0.1.0",
+  "description": "Kotlin JS Common Classes/Function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freewind/kotlin-js-commons.git"
+  },
+  "keywords": [
+    "kotlin-js"
+  ],
+  "author": "Freewind",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freewind/kotlin-js-commons/issues"
+  },
+  "homepage": "https://github.com/freewind/kotlin-js-commons#readme"
+}

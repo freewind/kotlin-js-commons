@@ -9,13 +9,16 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
     }
 }
 
 apply plugin: 'kotlin2js'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven'
 
 compileKotlin2Js {
-    kotlinOptions.outputFile = "${projectDir}/generated/hello.js"
+    kotlinOptions.outputFile = "${projectDir}/generated/index.js"
 }
 
 repositories {
@@ -29,6 +32,33 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
     testCompile "org.jetbrains.kotlin:kotlin-test-js:$kotlin_version"
 }
+
+ext {
+    // have to change
+    publishedGroupId = 'freewind.github.com'
+    // `artifact` also use as and `bintray.pkg.name` for simplifying
+    artifact = 'kotlin-js-commons'
+    libraryVersion = '0.1.0'
+    // `libraryName` also uses as `bintray.pkg.libraryName` and `bintray.pkg.version.libraryName`
+    libraryName = 'Kotlin Js Common Objects/Functions'
+
+    siteUrl = 'https://github.com/freewind/kotlin-js-commons'
+
+    // normally no need to change
+    repoName = 'maven'
+
+    gitUrl = "${siteUrl}.git"
+
+    developerId = 'freewind'
+    developerName = 'Freewind'
+    developerEmail = 'nowindlee@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'bintray.gradle'
 
 // gradle wrapper --gradle-version 4.8.1
 // ./gradlew -version

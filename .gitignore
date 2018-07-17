@@ -1,4 +1,4 @@
 build/
 out/
-generated/
+local.properties
 local.properties
