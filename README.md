@@ -7,9 +7,7 @@ To use in `build.gradle`:
 
 ```
 repositories {
-    maven {
-        url 'https://dl.bintray.com/freewind/maven/'
-    }
+    maven { url 'https://dl.bintray.com/freewind/maven/' }
 }
 
 dependencies {
