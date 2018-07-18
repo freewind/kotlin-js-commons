@@ -1,6 +1,6 @@
 {
   "name": "kotlin-js-commons",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Kotlin JS Common Classes/Function",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "kotlin-js"
   ],
-  "author": "Freewind",
+  "author": "nowindlee@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/freewind/kotlin-js-commons/issues"

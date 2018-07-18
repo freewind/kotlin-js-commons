@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile 'freewind.github.com:kotlin-js-commons:0.1.1'
+    compile 'freewind.github.com:kotlin-js-commons:0.1.2'
 }
 ```
 

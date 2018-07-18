@@ -3,15 +3,10 @@ if (typeof kotlin === 'undefined') {
 }
 this['kotlin-js-commons'] = function (_, Kotlin) {
   'use strict';
-  var $$importsForInline$$ = _.$$importsForInline$$ || (_.$$importsForInline$$ = {});
   var defineInlineFunction = Kotlin.defineInlineFunction;
   var wrapFunction = Kotlin.wrapFunction;
-  var json = Kotlin.kotlin.js.json_pyyo18$;
   function main(args) {
-    var x = json([]);
-    x['key1'] = 'value1';
-    x['key2'] = 'value2';
-    console.log(x);
+    console.log('kotlin-js-commons is loaded');
   }
   var JsObj = defineInlineFunction('kotlin-js-commons.kotlinjs.common.JsObj_287e2$', wrapFunction(function () {
     var Any = Object;
@@ -27,7 +22,6 @@ this['kotlin-js-commons'] = function (_, Kotlin) {
       return json([]);
     };
   }));
-  $$importsForInline$$['kotlin-js-commons'] = _;
   var package$example = _.example || (_.example = {});
   package$example.main_kand9s$ = main;
   var package$kotlinjs = _.kotlinjs || (_.kotlinjs = {});
