@@ -1,6 +1,6 @@
 {
   "name": "kotlin-js-commons",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Kotlin JS Common Classes/Function",
   "main": "index.js",
   "scripts": {

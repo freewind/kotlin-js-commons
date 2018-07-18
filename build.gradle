@@ -22,7 +22,7 @@ ext {
     publishedGroupId = 'freewind.github.com'
     // `artifact` also use as and `bintray.pkg.name` for simplifying
     artifact = 'kotlin-js-commons'
-    libraryVersion = '0.1.2'
+    libraryVersion = '0.2.0'
     // `libraryName` also uses as `bintray.pkg.libraryName` and `bintray.pkg.version.libraryName`
     libraryName = 'Kotlin Js Common Objects/Functions'
 

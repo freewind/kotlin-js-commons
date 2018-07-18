@@ -5,9 +5,6 @@ this['kotlin-js-commons'] = function (_, Kotlin) {
   'use strict';
   var defineInlineFunction = Kotlin.defineInlineFunction;
   var wrapFunction = Kotlin.wrapFunction;
-  function main(args) {
-    console.log('kotlin-js-commons is loaded');
-  }
   var JsObj = defineInlineFunction('kotlin-js-commons.kotlinjs.common.JsObj_287e2$', wrapFunction(function () {
     var Any = Object;
     var throwCCE = Kotlin.throwCCE;
@@ -22,13 +19,10 @@ this['kotlin-js-commons'] = function (_, Kotlin) {
       return json([]);
     };
   }));
-  var package$example = _.example || (_.example = {});
-  package$example.main_kand9s$ = main;
   var package$kotlinjs = _.kotlinjs || (_.kotlinjs = {});
   var package$common = package$kotlinjs.common || (package$kotlinjs.common = {});
   package$common.JsObj_287e2$ = JsObj;
   package$common.JsObj = JsObj_0;
-  main([]);
   Kotlin.defineModule('kotlin-js-commons', _);
   return _;
 }(typeof this['kotlin-js-commons'] === 'undefined' ? {} : this['kotlin-js-commons'], kotlin);
