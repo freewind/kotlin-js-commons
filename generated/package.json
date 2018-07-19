@@ -1,8 +1,8 @@
 {
   "name": "kotlin-js-commons",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Kotlin JS Common Classes/Function",
-  "main": "index.js",
+  "main": "kotlin-js-commons.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

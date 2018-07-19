@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile 'freewind.github.com:kotlin-js-commons:0.2.0'
+    compile 'freewind.github.com:kotlin-js-commons:0.4.0'
 }
 ```
 
@@ -50,4 +50,3 @@ When you modified the code, don't forget to change versions in:
 
 - `README.md`
 - `build.gradle`
-- `generated/package.json`

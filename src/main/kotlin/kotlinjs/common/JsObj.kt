@@ -2,8 +2,4 @@
 
 package kotlinjs.common
 
-import kotlin.js.Json
-import kotlin.js.json
-
-inline fun <T> JsObj(): T = js("({})") as T
-inline fun JsObj(): Json = json()
+inline fun <T> jsonAs(): T = js("({})") as T
