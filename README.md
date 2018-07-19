@@ -24,6 +24,8 @@ npm install --save kotlin-js-commons
 Publish
 -------
 
+### Maven
+
 to maven local:
 
 ```
@@ -36,10 +38,18 @@ to bintray:
 ./gradlew bintrayUpload
 ```
 
-to npm:
+### Npm
+
+Link:
 
 ```
-cd generated
+./npm-link.sh
+```
+
+Publish:
+
+```
+cd npm-publish
 npm publish
 ```
 
